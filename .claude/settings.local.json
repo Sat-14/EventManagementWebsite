@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/c/xampp/php/php.exe test_gd.php)",
+      "Bash(/c/xampp/mysql/bin/mysql.exe:*)",
+      "Bash(test:*)",
+      "Bash(/c/xampp/php/php.exe -r \"echo file_get_contents(''''http://localhost:8000/'''') ? ''''Homepage loads successfully'''' : ''''Failed'''';\")",
+      "Bash(/c/xampp/php/php.exe -r \"echo password_hash(''admin123'', PASSWORD_DEFAULT);\")",
+      "Bash(grep:*)",
+      "Bash(dir:*)",
+      "Bash(cat:*)",
+      "Bash(/c/xampp/php/php.exe:*)",
+      "Bash(start.bat)",
+      "Bash(tree:*)",
+      "Bash(curl:*)",
+      "Bash(cmd:*)",
+      "Bash(timeout:*)",
+      "Bash(C:xamppphpphp.exe -S localhost:8000)",
+      "Bash(tasklist)",
+      "Read(//c/xampp//**)",
+      "Read(//c/xampp/**)",
+      "Bash(awk:*)",
+      "Bash(xargs:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

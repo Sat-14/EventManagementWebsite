@@ -1,6 +1,6 @@
 <?php
-session_start();
-unset($_SESSION["username"]);
-unset($_SESSION["password"]);
-header("Location:index.php");
+/**
+ * Wrapper for auth/log_out.php
+ */
+require __DIR__ . '/auth/log_out.php';
 ?>

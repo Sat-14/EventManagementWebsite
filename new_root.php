@@ -1,5 +1,5 @@
 <?php
-include('dbconnect.php');
+include(__DIR__ . '/config/dbconnect.php');
 
 $id = $_GET['id'];
 
@@ -14,7 +14,7 @@ $startdate = date('d', strtotime($row['startdate']));
 	
 	
 
-    $array[]   =      "<article class='eventCard__item item-2'><div class='item-2-img'><img src='images/".$row['event_thumbnail']."'><div class='date-1 bottom'><span>".$startdate."</span>".date('M', $date)."</div></div><div class='item-2-box pl'><h3 class='name'><a href='eventpage.php?id=".$row['event_id']."'>".$row['event_title']."</a></h3><p class='address'>".$row['event_venue']."</p></div></article>";
+    $array[]   =      "<article class='eventCard__item item-2'><div class='item-2-img'><img src="public/images/".$row['event_thumbnail']."'><div class='date-1 bottom'><span>".$startdate."</span>".date('M', $date)."</div></div><div class='item-2-box pl'><h3 class='name'><a href='app/views/eventpage.php?id=".$row['event_id']."'>".$row['event_title']."</a></h3><p class='address'>".$row['event_venue']."</p></div></article>";
 		
 
 }
